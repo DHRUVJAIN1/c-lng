@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n,*ptr,a[30],i,sum=0;
+    scanf("%d",&n);
+    printf("%d",n);
+    ptr=(int*)calloc(n,sizeof(int));
+    printf("\nenter the value of array elements");
+    for(i=0;i<n;i++)
+    scanf("\%d",&a[i]);
+    for(i=0;i<n;i++)
+    printf("%d\t",a[i]);
+    for(i=0;i<n;i++)
+    sum+=a[i];
+    printf("\n%d",sum);
+    
+}
